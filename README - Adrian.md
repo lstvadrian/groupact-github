@@ -1,3 +1,3 @@
-# groupact-github
+# 1. Summary of what your learned
 
-# THIS IS FROM ADRIAN BRANCH
+    I learned how to create branch, merging, and resolving some conflicts that I encountered like can merged due to conflict on pull request.

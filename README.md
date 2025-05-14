@@ -1,6 +1,6 @@
 # groupact-github
 
-# This for the Practice of using Github for QA Advance training by Ms.Jhen
+# This for the Practice of using Github for QA Advance training by Ms. Jhen
 
 [THIS IS FROM ADRIAN BRANCH](https://github.com/lstvadrian/groupact-github/blob/main/README%20-%20Adrian.md)
 

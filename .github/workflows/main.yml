@@ -1,0 +1,26 @@
+name: Pull Request Check
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check-readmes:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: List all files
+      run: ls -al
+
+    - name: Check for README files
+      run: |
+        echo "Checking for README files..."
+        ls | grep 'README' || echo "No README files found!"
+
+    - name: Confirm branch name
+      run: |
+        echo "Running on branch: ${{ github.head_ref }}"

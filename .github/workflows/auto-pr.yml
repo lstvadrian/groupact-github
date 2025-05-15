@@ -1,0 +1,30 @@
+name: Auto Pull Request to Main
+
+on:
+  push:
+    branches:
+      - adrian-new
+      - cristel
+      - marlon-git
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Create Pull Request to main
+        uses: peter-evans/create-pull-request@v5
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          title: "Auto PR from ${{ github.ref_name }}"
+          body: "This pull request was automatically created from branch `${{ github.ref_name }}`."
+          base: main
+          branch: ${{ github.ref_name }}
+          draft: false

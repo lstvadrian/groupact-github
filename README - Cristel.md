@@ -21,7 +21,7 @@ I started with the basics:
    - `git commit -m "Initial commit"`
    - `git push -u origin main`
 
-### • Generating Cloning using SSH:
+### • Generating SSH Key and Cloning using SSH:
 1. Generate a SSH key to your local machine:
    - Open a termina and run `ssh-keygen -t ed25519 -C "lstv.cristel.millan@gmail.com"`
    - Enter the file name of the .shh key.

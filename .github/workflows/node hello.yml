@@ -19,5 +19,5 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Run Hello world.js
-        run: node Hello world.js
+      - name: Run Hello_world.js
+        run: node Hello_world.js

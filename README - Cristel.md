@@ -123,7 +123,7 @@ These helped me to manage commit history.
 
 ### • Squashing Commits Using Rebase
 
-1. First I created multiple commits
+1. First I created a multiple commits
 2. Check first recent commit history to make sure I am targeting the right commit. To show git commit history simply run `git log --oneline`
 3. Then, squash commits using rebase to make multiple commits into single commit. Make commit history clean `git rebase -i HEAD~2`
      - Example:
@@ -135,4 +135,12 @@ These helped me to manage commit history.
      - Confirm if the Squash worked, run: `git log --oneline`
             `cfd1c8e (HEAD -> cristel) Add Text1.txt and Text2.txt file`
 
+### • Cherry-picking
+1. Create a new branch `git checkout -b cherry-picking-cristel`
+2. Find a commit that you want to cherry pick `git log --oneline`
+3. Cherry-pick a commit: `git cherry-pick 2328a6c`
+4. Verify the commit is now on your current branch `git log --oneline`
+
+Rebase: This is good for making commit history clean and organize.
+Cherry-picking: This feature helps moving a commit to a different branch. Useful for bug fixes or enhamcement.
 

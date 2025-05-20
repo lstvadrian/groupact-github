@@ -12,25 +12,26 @@ I started with the basics:
 2. Then, created a folder named `cristel-github-learning` on my local machine.
 3. I opened this folder in VS Code.
 4. In VS Code, I opened the terminal and initialized a Git Repository by running these commands:
-   - `git init`
-   - `git remote add origin https://github.com/lstvcristel/cristel-github-learning.git`
-   - `git branch -M main`
-   - `touch README.md`
-   - `git status`
-   - `git add .`
-   - `git commit -m "Initial commit"`
-   - `git push -u origin main`
+    - `git init`
+    - `git remote add origin https://github.com/lstvcristel/cristel-github-learning.git`
+    - `git branch -M main`
+    - `touch README.md`
+    - `git status`
+    - `git add .`
+    - `git commit -m "Initial commit"`
+    - `git push -u origin main`
 
 ### • Generating SSH Key and Cloning using SSH:
+
 1. Generate a SSH key to your local machine:
-   - Open a termina and run `ssh-keygen -t ed25519 -C "lstv.cristel.millan@gmail.com"`
-   - Enter the file name of the .shh key.
-   - Enter a passphrase (optional).
+    - Open a termina and run `ssh-keygen -t ed25519 -C "lstv.cristel.millan@gmail.com"`
+    - Enter the file name of the .shh key.
+    - Enter a passphrase (optional).
 2. Start the SSH agent by running this commands:
-   - `eval "$(ssh-agent -s)"`
-   - `ssh-add ~/.ssh/lstvcristel`
+    - `eval "$(ssh-agent -s)"`
+    - `ssh-add ~/.ssh/lstvcristel`
 3. Copy your public key to your clipboard:
-   - `clip < ~/lstvcristel.pub`
+    - `clip < ~/lstvcristel.pub`
 4. Go to GitHub and log in
 5. Go to `Settings > SSH and GPG Keys`
 6. Click `New SSH key`
@@ -50,7 +51,40 @@ I started with the basics:
 7. Delete branch from remote repo: `git branch --delete develop`
 
 ### • Merging:
-1. Merge changes into main:
-   - `git checkout main`
-   - `git merge develop`
-   - `git push origin main`
+
+1. Check or compare files between current branch and main branch:
+    - `git diff main`
+2. Merge changes into main:
+    - `git checkout main`
+    - `git merge develop`
+    - `git push origin main`
+
+### • Undoing Changes
+1. Restore all files in current directory and will discards all unstaged changes 
+    - `git restore .` 
+2. Restore all files to their state in current or last commit 
+    -`git restore HEAD`
+
+## GitHub Action
+1. First I created a file `.github\workflows\test.yml`
+2. Add this content:
+    1. First I created a file `.github\workflows\test.yml`
+2. Add this content:
+                     name: CI
+
+                     on:
+                     push:
+                        branches: ["develop"]
+                     pull_request:
+                        branches: ["develop"]
+
+                     workflow_dispatch:
+
+                     jobs:
+                     build:
+                        runs-on: ubuntu-latest
+                        steps:
+                           - uses: actions/checkout@v4
+
+                           - name: Run a one-line script
+                           run: echo Hello, world!

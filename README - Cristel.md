@@ -87,4 +87,7 @@ I started with the basics:
                            - uses: actions/checkout@v4
 
                            - name: Run a one-line script
-                           run: echo Hello, world!
+                           run: echo "Hello, world!"
+
+                           - name: Notify
+                           run: echo "Workflow completed successfully!"

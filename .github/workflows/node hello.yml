@@ -1,4 +1,4 @@
-name: Run Hello World JS
+name: Run Hello World JS (1)
 
 on:
   push:

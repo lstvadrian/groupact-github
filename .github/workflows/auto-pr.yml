@@ -1,4 +1,4 @@
-name: Auto Pull Request to Main
+name: Auto Pull Request to Main (1)
 
 on:
   push:
@@ -28,4 +28,3 @@ jobs:
           base: main
           branch: ${{ github.ref_name }}
           draft: false
-          

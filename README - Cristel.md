@@ -141,6 +141,6 @@ These helped me to manage commit history.
 3. Cherry-pick a commit: `git cherry-pick 2328a6c`
 4. Verify the commit is now on your current branch `git log --oneline`
 
-Rebase: This is good for making commit history clean and organize.
-Cherry-picking: This feature helps moving a commit to a different branch. Useful for bug fixes or enhamcement.
+- **Rebase**: Useful for making commit history clean and organized.
+- **Cherry-picking**: Allows you to move a commit to a different branch. Helpful for bug fixes or enhancements.
 

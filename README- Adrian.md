@@ -14,4 +14,4 @@ In Activity 4 , I learned the purpose rebase, stash and cherry picking, upon exp
 
 ## Summary of what you learned in Activity 5
 
-In th last Activity, Security is a must so i think this activity is very helpful to us to make sure the security of our work and also to prevent some mistakes to ruin this project
+In the last Activity, Security is a must so i think this activity is very helpful to us to make sure the security of our work and also to prevent some mistakes to ruin this project

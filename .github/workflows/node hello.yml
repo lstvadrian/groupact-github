@@ -2,9 +2,9 @@ name: Run Hello World JS (1)
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   hello-job:
@@ -17,7 +17,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
-      - name: Run hello.js
-        run: node hello.js
+      - name: Run Hello world.js
+        run: node Hello world.js

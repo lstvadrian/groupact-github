@@ -91,3 +91,24 @@ I started with the basics:
 
                            - name: Notify
                            run: echo "Workflow completed successfully!"
+
+## GitHub Issues & Pull Requests
+
+I learned how collaboration work using GitHub.
+
+This is what I've learn so far:
+1. Open a new Issue:
+    - Title: Summary Activity 3
+    - Description: Add summary of what have you learn in activity 3.
+2. Forked the repository from team's repo, then clone it locally.
+3. Create a new branch `git checkout -b fix-issue`
+4. Made changes, then commit and push
+5. Opened a Pull Request
+6. After PR was merge, I closed the issue using the terminal with GitHub CLI:
+    - Install GitHub CLI first by running this command in Powershell (Admin) `winget install --id GitHub.cli`
+    - Check if isntalled `gh --version`
+    - Log in and authenticate your account `gh auth login`
+    - Set default remote repo `gh repo set-default`
+    - Check issues `gh issue list`
+    - Close issue`gh issue close 21`
+7. GitHub Issue help track bugs and Pull Requests make collaboration organized

@@ -1,0 +1,12 @@
+{
+  "name": "groupact-github",
+  "version": "1.0.0",
+  "description": "[THIS IS FROM ADRIAN BRANCH](https://github.com/lstvadrian/groupact-github/blob/main/README%20-%20Adrian.md)",
+  "main": "Hello world.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
